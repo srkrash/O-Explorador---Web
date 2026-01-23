@@ -29422,46 +29422,50 @@ _.d=d
 _.e=-1
 _.f=null},
 atm:function atm(a){this.a=a},
-a7G(){var s=0,r=A.x(t.H),q=1,p=[],o,n,m,l,k,j,i,h,g
+a7G(){var s=0,r=A.x(t.H),q=1,p=[],o,n,m,l,k,j,i,h,g,f,e,d
 var $async$a7G=A.y(function(a,b){if(a===1){p.push(b)
 s=q}for(;;)switch(s){case 0:if($.a0==null)A.Xi()
 $.a0.toString
+o=!1
 q=3
 s=6
 return A.o($.aIf().xw(".env"),$async$a7G)
-case 6:q=1
+case 6:o=!0
+q=1
 s=5
 break
 case 3:q=2
-h=p.pop()
-o=A.V(h)
-A.tv().$1("DotEnv not found or blocked: "+A.k(o))
+e=p.pop()
+n=A.V(e)
+A.tv().$1("DotEnv not found or blocked: "+A.k(n))
 s=5
 break
 case 2:s=1
 break
-case 5:q=8
-k=$.aIf().ga_3().i(0,"SUPABASE_URL")
-if(k==null)k="https://hmbbmfjqenllzhhqkxxz.supabase.co"
-j=$.aIf().ga_3().i(0,"SUPABASE_ANON_KEY")
+case 5:m=o?$.aIf().ga_3().i(0,"SUPABASE_URL"):null
+l=o?$.aIf().ga_3().i(0,"SUPABASE_ANON_KEY"):null
+q=8
+h=m
+if(h==null)h="https://hmbbmfjqenllzhhqkxxz.supabase.co"
+g=l
 s=11
-return A.o(A.at2(j==null?"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhtYmJtZmpxZW5sbHpoaHFreHh6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc3MzU4NjQsImV4cCI6MjA4MzMxMTg2NH0.bFxNGUdCjv_UDNjOZ1Ys_VUpfG7b1rt4Z4qCYFr8B1k":j,k),$async$a7G)
+return A.o(A.at2(g==null?"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImhtYmJtZmpxZW5sbHpoaHFreHh6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3Njc3MzU4NjQsImV4cCI6MjA4MzMxMTg2NH0.bFxNGUdCjv_UDNjOZ1Ys_VUpfG7b1rt4Z4qCYFr8B1k":g,h),$async$a7G)
 case 11:if($.a0==null)A.Xi()
-i=$.a0
-A.aSs(i.a3f(B.a13),i,"runApp")
+f=$.a0
+A.aSs(f.a3f(B.a13),f,"runApp")
 q=1
 s=10
 break
 case 8:q=7
-g=p.pop()
-n=A.V(g)
-m=A.ar(g)
-A.tv().$1("CRITICAL INITIALIZATION ERROR: "+A.k(n))
-A.aSU(null,null,m)
-k=A.aIX(A.pH(null,A.aPY(A.dD("Erro fatal ao iniciar:\n"+A.k(n)+"\n\n"+A.k(m),null,null,null,B.a8f,null,null,null),null),B.L,B.n,null,null,null,null,null,B.iv,null,null,null),B.j)
+d=p.pop()
+k=A.V(d)
+j=A.ar(d)
+A.tv().$1("CRITICAL INITIALIZATION ERROR: "+A.k(k))
+A.aSU(null,null,j)
+h=A.aIX(A.pH(null,A.aPY(A.dD("Erro fatal ao iniciar:\n"+A.k(k)+"\n\n"+A.k(j),null,null,null,B.a8f,null,null,null),null),B.L,B.n,null,null,null,null,null,B.iv,null,null,null),B.j)
 if($.a0==null)A.Xi()
-i=$.a0
-A.aSs(i.a3f(k),i,"runApp")
+f=$.a0
+A.aSs(f.a3f(h),f,"runApp")
 s=10
 break
 case 7:s=1
