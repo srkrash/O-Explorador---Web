@@ -33,6 +33,24 @@
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
+  <script>
+    // Debug script to show errors on screen
+    window.onerror = function(message, source, lineno, colno, error) {
+      var errorDiv = document.createElement("div");
+      errorDiv.style.position = "absolute";
+      errorDiv.style.top = "0";
+      errorDiv.style.left = "0";
+      errorDiv.style.width = "100%";
+      errorDiv.style.height = "100%";
+      errorDiv.style.backgroundColor = "white";
+      errorDiv.style.color = "red";
+      errorDiv.style.zIndex = "9999";
+      errorDiv.style.padding = "20px";
+      errorDiv.style.whiteSpace = "pre-wrap";
+      errorDiv.innerText = "Error: " + message + "\nSource: " + source + "\nLine: " + lineno;
+      document.body.appendChild(errorDiv);
+    };
+  </script>
   <script src="flutter_bootstrap.js" async></script>
 </body>
 </html>
