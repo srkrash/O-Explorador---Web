@@ -97499,7 +97499,9 @@ o=c.c
 if(o!=null)l.m(0,"Authorization","Bearer "+A.k(o))
 n=c.f
 if(n==null){o=t.N
-n=A.o(o,o)}m=A.e_(a,0,null)
+n=A.o(o,o)}o=c.d
+if(o!=null){o.toString
+n.m(0,"redirect_to",o)}m=A.e_(a,0,null)
 o=A.du(m.gib(),t.N,t.z)
 o.X(0,n)
 s=3
@@ -97596,9 +97598,9 @@ A.afD.prototype={}
 A.afE.prototype={
 gnC(){var s=this.r
 return s===$?this.r=new A.Q7(this.f):s},
-uZ(a,b){return this.a68(a,b)},
-a68(a,b){var s=0,r=A.x(t.W8),q,p=this,o,n,m,l,k,j,i,h,g
-var $async$uZ=A.y(function(c,d){if(c===1)return A.u(d,r)
+uZ(a,b,c){return this.a68(a,b,c)},
+a68(a,b,c){var s=0,r=A.x(t.W8),q,p=this,o,n,m,l,k,j,i,h,g
+var $async$uZ=A.y(function(d,e){if(d===1)return A.u(e,r)
 for(;;)switch(s){case 0:h=A.bf()
 s=p.ay===B.fu?3:5
 break
@@ -97614,8 +97616,8 @@ l=t.N
 k=A.aa(["captcha_token",null],l,t.T)
 g=h
 s=7
-return A.n(m.l2(p.d+"/signup",B.fa,A.qy(A.aa(["email",a,"password",b,"data",null,"gotrue_meta_security",k,"code_challenge",n,"code_challenge_method",n!=null?"s256":null],l,t.z),p.e,null,null,null,null)),$async$uZ)
-case 7:g.sdv(d)
+return A.n(m.l2(p.d+"/signup",B.fa,A.qy(A.aa(["email",a,"password",c,"data",null,"gotrue_meta_security",k,"code_challenge",n,"code_challenge_method",n!=null?"s256":null],l,t.z),p.e,null,null,null,b)),$async$uZ)
+case 7:g.sdv(e)
 j=A.aJA(h.aK())
 i=j.a
 if(i!=null){p.pz(i)
@@ -100222,7 +100224,7 @@ var $async$B2=A.y(function(a,b){if(a===1){p.push(b)
 s=q}for(;;)switch(s){case 0:n.ac(new A.axS(n))
 q=3
 s=6
-return A.n(n.f.ghw().uZ(B.c.hR(n.d.a.a),B.c.hR(n.e.a.a)),$async$B2)
+return A.n(n.f.ghw().uZ(B.c.hR(n.d.a.a),"https://srkrash.github.io/O-Explorador---Web/#/account-confirmed",B.c.hR(n.e.a.a)),$async$B2)
 case 6:l=n.c
 if(l!=null){l.ah(t.J).f.iM(B.a6P)
 l=n.c
